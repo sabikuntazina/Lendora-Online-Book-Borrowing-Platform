@@ -2,6 +2,7 @@
 import React from 'react';
 import userPic from '@/assets/user.png'
 import NavLink from './Navlink';
+import Image from 'next/image';
 
 
 const Navbar = () => {
@@ -10,12 +11,14 @@ const Navbar = () => {
 
   const links=<>
   <NavLink href={'/'}><li>Home</li></NavLink>
-  <NavLink href={'/about'}><li>About</li></NavLink>
-  <NavLink href={'/career'}><li>Career</li></NavLink>
+  <NavLink href={'/allbooks'}><li>All Books</li></NavLink>
+  <NavLink href={'/myprofile'}><li>Profile</li></NavLink>
   </>
   return (
+    <div className='bg-base-100 shadow-sm'>
+
+   <div className="navbar max-w-7xl mx-auto ">
     
-   <div className="navbar bg-base-100 shadow-sm">
   <div className="navbar-start">
     <div className="dropdown">
       <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">
@@ -27,10 +30,18 @@ const Navbar = () => {
        {links}
       </ul>
     </div>
-    <a className="btn btn-ghost text-xl">daisyUI</a>
+       <Image
+            src={"/logo.png"}
+            alt="logo"
+            loading="eager"
+            width={30}
+            height={30}
+            className="object-cover h-auto w-auto"
+          />
+    <a className=" ml-2 font-extrabold text-xl">Lendora</a>
   </div>
   <div className="navbar-center hidden lg:flex">
-    <ul className="menu menu-horizontal space-x-4 px-1">
+    <ul className="menu menu-horizontal space-x-4 px-1 text-lg">
       {links}
     </ul>
   </div>
@@ -38,6 +49,8 @@ const Navbar = () => {
     <a className="btn">Button</a>
   </div>
 </div>
+    </div>
+    
   );
 };
 
