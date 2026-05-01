@@ -6,6 +6,7 @@
     "description": "A mysterious story about a forest where no sound exists and secrets unfold.",
     "category": "Story",
     "available_quantity": 8,
+    "badge": "",
     "image_url": "https://picsum.photos/seed/book1/300/400"
   },
   {
@@ -15,6 +16,7 @@
     "description": "A complete guide to modern JavaScript, from basics to advanced concepts.",
     "category": "Tech",
     "available_quantity": 12,
+    "badge": "Popular",
     "image_url": "https://picsum.photos/seed/book2/300/400"
   },
   {
@@ -24,6 +26,7 @@
     "description": "Explore the wonders of the universe and the mysteries of space.",
     "category": "Science",
     "available_quantity": 5,
+    "badge": "",
     "image_url": "https://picsum.photos/seed/book3/300/400"
   },
   {
@@ -33,6 +36,7 @@
     "description": "An adventure story about discovering a forgotten civilization.",
     "category": "Story",
     "available_quantity": 7,
+    "badge": "",
     "image_url": "https://picsum.photos/seed/book4/300/400"
   },
   {
@@ -42,6 +46,7 @@
     "description": "Learn React step by step and build modern web applications.",
     "category": "Tech",
     "available_quantity": 10,
+    "badge": "Popular",
     "image_url": "https://picsum.photos/seed/book5/300/400"
   },
   {
@@ -51,6 +56,7 @@
     "description": "A deep dive into how the human brain works and processes information.",
     "category": "Science",
     "available_quantity": 6,
+    "badge": "",
     "image_url": "https://picsum.photos/seed/book6/300/400"
   },
   {
@@ -60,6 +66,7 @@
     "description": "A romantic story filled with emotions, love, and heartbreak.",
     "category": "Story",
     "available_quantity": 9,
+    "badge": "",
     "image_url": "https://picsum.photos/seed/book7/300/400"
   },
   {
@@ -69,6 +76,7 @@
     "description": "Build fast and scalable web apps using Next.js framework.",
     "category": "Tech",
     "available_quantity": 11,
+    "badge": "Popular",
     "image_url": "https://picsum.photos/seed/book8/300/400"
   },
   {
@@ -78,6 +86,7 @@
     "description": "Understand the strange and fascinating world of quantum physics.",
     "category": "Science",
     "available_quantity": 4,
+    "badge": "New",
     "image_url": "https://picsum.photos/seed/book9/300/400"
   },
   {
@@ -87,6 +96,7 @@
     "description": "A thrilling story uncovering secrets buried deep in society.",
     "category": "Story",
     "available_quantity": 6,
+    "badge": "New",
     "image_url": "https://picsum.photos/seed/book10/300/400"
   },
   {
@@ -96,6 +106,7 @@
     "description": "Learn frontend and backend development to become a full stack developer.",
     "category": "Tech",
     "available_quantity": 13,
+    "badge": "Popular",
     "image_url": "https://picsum.photos/seed/book11/300/400"
   },
   {
@@ -105,6 +116,7 @@
     "description": "A scientific explanation of climate change and its global impact.",
     "category": "Science",
     "available_quantity": 5,
+    "badge": "New",
     "image_url": "https://picsum.photos/seed/book12/300/400"
   }
 ]

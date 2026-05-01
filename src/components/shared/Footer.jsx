@@ -1,3 +1,4 @@
+// 'use client'
 import Image from 'next/image';
 import React from 'react';
 import { FaFacebookF, FaInstagram, FaTwitter } from 'react-icons/fa';
@@ -7,7 +8,7 @@ const Footer = () => {
    <footer className="footer sm:footer-horizontal bg-neutral text-neutral-content p-10 max-w-7xl mx-auto">
   <aside>
    
-    <p className='flex justify-center items-center gap-3'>
+    <div className='flex justify-center items-center gap-3'>
         <Image
                   src={"/logo.png"}
                   alt="logo"
@@ -18,7 +19,7 @@ const Footer = () => {
                 />
      <h1 className='font-bold '>Lendora </h1>  
       <br />
-    </p>
+    </div>
      <h3>Your Online Book Borrowing Platform </h3> 
   </aside>
   <nav>
