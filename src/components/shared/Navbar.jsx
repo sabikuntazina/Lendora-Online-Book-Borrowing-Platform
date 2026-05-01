@@ -3,11 +3,18 @@ import React from 'react';
 import userPic from '@/assets/user.png'
 import NavLink from './Navlink';
 import Image from 'next/image';
+import { authClient } from '@/lib/auth-client';
+import Link from 'next/link';
 
 
 const Navbar = () => {
   
-
+const userData = authClient.useSession();
+// console.log(userData)
+const user= userData.data?.user;
+const handleSignOut=async()=>{
+await authClient.signOut();
+}
 
   const links=<>
   <NavLink href={'/'}><li>Home</li></NavLink>
@@ -46,7 +53,30 @@ const Navbar = () => {
     </ul>
   </div>
   <div className="navbar-end">
-    <a className="btn">Button</a>
+
+    {
+      user? (
+         <div className='space-x-4 flex items-center'>
+          <h2>{user.name}</h2>
+        <div tabIndex={0} role="button" className="btn btn-ghost btn-circle avatar">
+        <div className="w-10 rounded-full">
+        <Image src={user.image} alt='user-logo' height={40} width={40} ></Image>
+        </div>
+      </div>
+      <Link className='btn bg-gray-800 text-white font-bold px-4' href={'/signin'}><button onClick={handleSignOut}>Signout</button></Link>
+      </div>
+      ) :
+      (
+         <div className='space-x-4'>
+        <div tabIndex={0} role="button" className="btn btn-ghost btn-circle avatar">
+        <div className="w-10 rounded-full">
+        <Image src={userPic} alt='user-logo' height={30} width={40} ></Image>
+        </div>
+      </div>
+      <Link className='btn bg-gray-800 text-white font-bold px-4' href={'/signin'}><button>Signin</button></Link>
+      </div>
+      )
+    }
   </div>
 </div>
     </div>

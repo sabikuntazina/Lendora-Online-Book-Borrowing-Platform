@@ -7,8 +7,12 @@ const AllBooksPage = async({searchParams}) => {
   // console.log(category)
   const allBooks= await getAllBooks();
 
-  const filteredBooks= category ? allBooks.filter(book=> book.category.toLowerCase()== category.toLowerCase()) : allBooks;
-  // console.log(allBooks)
+ const filteredBooks =
+  !category || category === "all"
+    ? allBooks
+    : allBooks.filter(
+        (book) => book.category.toLowerCase() === category.toLowerCase()
+      );
   return (
       <div className='my-10 space-y-8'>
       <h2 className='font-bold text-3xl'>All Books</h2>

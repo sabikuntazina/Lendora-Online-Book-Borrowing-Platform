@@ -5,6 +5,8 @@ import Link from "next/link";
 import React from "react";
 import { Icon } from "@iconify/react";
 import { useForm } from "react-hook-form";
+import { authClient } from "@/lib/auth-client";
+import { toast } from "react-toastify";
 
 const SignUpPage = () => {
   const {
@@ -16,14 +18,30 @@ const SignUpPage = () => {
   const [loading, setLoading] = useState(false);
   // const { login, googleLogin } = useAuth();
 
-  const handleSubmitFunc = (data) => {
-    console.log(data);
+  const handleSubmitFunc =async (data) => {
+    // console.log(data);
+    const { data:res, error } = await authClient.signUp.email({
+    name: data.name, // required
+    email: data.email, // required
+    password: data.password, // required
+    image: data.photo,
+    callbackURL: "/signin",
+});
+console.log(res, error);
+    if(res){
+  toast.success("sign up in successfully done")
+}
+if(error){
+  toast.error(error.message)
+}
 
     setLoading(false);
   };
   const handleGoogleLogin = async () => {
     setLoading(true);
-    await googleLogin();
+    const data = await authClient.signIn.social({
+    provider: "google",
+  });
     setLoading(false);
   };
 
