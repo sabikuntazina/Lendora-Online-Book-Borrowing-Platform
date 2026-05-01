@@ -1,11 +1,5 @@
 [
   {
-    "id": "00",
-    "name": "All Books",
-    "description": "Browse all available books",
-    "icon": "📚"
-  },
-  {
     "id": "01",
     "name": "Story",
     "description": "Fictional and narrative-based books",
@@ -22,5 +16,11 @@
     "name": "Science",
     "description": "Scientific knowledge and discoveries",
     "icon": "🔬"
+  },
+  {
+    "id": "04",
+    "name": "All",
+    "description": "Browse all available books",
+    "icon": "📚"
   }
 ]
