@@ -1,16 +1,22 @@
+import Category from '@/components/Category';
 import BookCard from '@/components/HomePage/BookCard';
 import { getAllBooks } from '@/lib/method';
 
-const AllBooksPage = async() => {
+const AllBooksPage = async({searchParams}) => {
+  const {category}= await searchParams;
+  // console.log(category)
   const allBooks= await getAllBooks();
+
+  const filteredBooks= category ? allBooks.filter(book=> book.category.toLowerCase()== category.toLowerCase()) : allBooks;
   // console.log(allBooks)
   return (
       <div className='my-10 space-y-8'>
       <h2 className='font-bold text-3xl'>All Books</h2>
+      <Category></Category>
       <div className='grid md:grid-cols-2 lg:grid-cols-4 gap-4'>
 
       {
-        allBooks.map(book=> <BookCard key={book.id} book={book} ></BookCard>)
+        filteredBooks.map(book=> <BookCard key={book.id} book={book} ></BookCard>)
       }
       </div>
 
