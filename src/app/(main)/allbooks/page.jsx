@@ -1,9 +1,19 @@
-import React from 'react';
+import BookCard from '@/components/HomePage/BookCard';
+import { getAllBooks } from '@/lib/method';
 
-const AllBooksPage = () => {
+const AllBooksPage = async() => {
+  const allBooks= await getAllBooks();
+  // console.log(allBooks)
   return (
-    <div>
-      <h2>All books page is here</h2>
+      <div className='my-10 space-y-8'>
+      <h2 className='font-bold text-3xl'>All Books</h2>
+      <div className='grid md:grid-cols-2 lg:grid-cols-4 gap-4'>
+
+      {
+        allBooks.map(book=> <BookCard key={book.id} book={book} ></BookCard>)
+      }
+      </div>
+
     </div>
   );
 };
