@@ -1,0 +1,20 @@
+[
+  {
+    "id": "01",
+    "name": "Story",
+    "description": "Fictional and narrative-based books",
+    "icon": "📖"
+  },
+  {
+    "id": "02",
+    "name": "Tech",
+    "description": "Programming, development, and technology books",
+    "icon": "💻"
+  },
+  {
+    "id": "03",
+    "name": "Science",
+    "description": "Scientific knowledge and discoveries",
+    "icon": "🔬"
+  }
+]

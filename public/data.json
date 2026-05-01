@@ -1,0 +1,110 @@
+[
+  {
+    "id": 1,
+    "title": "The Silent Forest",
+    "author": "Anika Rahman",
+    "description": "A mysterious story about a forest where no sound exists and secrets unfold.",
+    "category": "Story",
+    "available_quantity": 8,
+    "image_url": "https://picsum.photos/seed/book1/300/400"
+  },
+  {
+    "id": 2,
+    "title": "Mastering JavaScript",
+    "author": "John Carter",
+    "description": "A complete guide to modern JavaScript, from basics to advanced concepts.",
+    "category": "Tech",
+    "available_quantity": 12,
+    "image_url": "https://picsum.photos/seed/book2/300/400"
+  },
+  {
+    "id": 3,
+    "title": "Space Beyond Earth",
+    "author": "Dr. Emily Stone",
+    "description": "Explore the wonders of the universe and the mysteries of space.",
+    "category": "Science",
+    "available_quantity": 5,
+    "image_url": "https://picsum.photos/seed/book3/300/400"
+  },
+  {
+    "id": 4,
+    "title": "The Lost City",
+    "author": "Rahim Uddin",
+    "description": "An adventure story about discovering a forgotten civilization.",
+    "category": "Story",
+    "available_quantity": 7,
+    "image_url": "https://picsum.photos/seed/book4/300/400"
+  },
+  {
+    "id": 5,
+    "title": "React for Beginners",
+    "author": "Sophia Lee",
+    "description": "Learn React step by step and build modern web applications.",
+    "category": "Tech",
+    "available_quantity": 10,
+    "image_url": "https://picsum.photos/seed/book5/300/400"
+  },
+  {
+    "id": 6,
+    "title": "The Human Brain",
+    "author": "Dr. Ahmed Khan",
+    "description": "A deep dive into how the human brain works and processes information.",
+    "category": "Science",
+    "available_quantity": 6,
+    "image_url": "https://picsum.photos/seed/book6/300/400"
+  },
+  {
+    "id": 7,
+    "title": "Whispers of the Night",
+    "author": "Nusrat Jahan",
+    "description": "A romantic story filled with emotions, love, and heartbreak.",
+    "category": "Story",
+    "available_quantity": 9,
+    "image_url": "https://picsum.photos/seed/book7/300/400"
+  },
+  {
+    "id": 8,
+    "title": "Next.js in Action",
+    "author": "David Miller",
+    "description": "Build fast and scalable web apps using Next.js framework.",
+    "category": "Tech",
+    "available_quantity": 11,
+    "image_url": "https://picsum.photos/seed/book8/300/400"
+  },
+  {
+    "id": 9,
+    "title": "Quantum World",
+    "author": "Dr. Sarah Wilson",
+    "description": "Understand the strange and fascinating world of quantum physics.",
+    "category": "Science",
+    "available_quantity": 4,
+    "image_url": "https://picsum.photos/seed/book9/300/400"
+  },
+  {
+    "id": 10,
+    "title": "The Hidden Truth",
+    "author": "Imran Hossain",
+    "description": "A thrilling story uncovering secrets buried deep in society.",
+    "category": "Story",
+    "available_quantity": 6,
+    "image_url": "https://picsum.photos/seed/book10/300/400"
+  },
+  {
+    "id": 11,
+    "title": "Full Stack Development",
+    "author": "Michael Brown",
+    "description": "Learn frontend and backend development to become a full stack developer.",
+    "category": "Tech",
+    "available_quantity": 13,
+    "image_url": "https://picsum.photos/seed/book11/300/400"
+  },
+  {
+    "id": 12,
+    "title": "Climate Change Explained",
+    "author": "Dr. Lisa Green",
+    "description": "A scientific explanation of climate change and its global impact.",
+    "category": "Science",
+    "available_quantity": 5,
+    "image_url": "https://picsum.photos/seed/book12/300/400"
+  }
+]
