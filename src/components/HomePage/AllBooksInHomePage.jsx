@@ -7,11 +7,14 @@ const allBooks= await getAllBooks();
 console.log(allBooks)
 
   return (
-    <div>
+    <div className=''>
       <h2 className='font-bold text-3xl'>All Books</h2>
+      <div className='grid grid-cols-4 gap-4'>
+
       {
         allBooks.map(book=> <BookCard key={book.id} book={book} ></BookCard>)
       }
+      </div>
     </div>
   );
 };
