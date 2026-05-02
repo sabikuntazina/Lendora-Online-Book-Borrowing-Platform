@@ -16,7 +16,7 @@ const SignInPage = () => {
   } = useForm();
 
   const [loading, setLoading] = useState(false);
-  // const { login, googleLogin } = useAuth();
+
 
   const handleSubmitFunc =async (data) => {
     // console.log(data);
@@ -37,6 +37,7 @@ if(error){
   };
 
   const handleGoogleLogin = async () => {
+    console.log("google button is clicked")
     setLoading(true);
      const data = await authClient.signIn.social({
     provider: "google",
