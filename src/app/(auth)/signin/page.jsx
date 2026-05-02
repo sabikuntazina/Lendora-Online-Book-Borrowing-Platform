@@ -26,6 +26,12 @@ const SignInPage = () => {
     rememberMe: true,
     callbackURL: "/",
 });
+   if(res){
+  alert("Login is successful")
+}
+if(error){
+  alert(error.message)
+}
 
     setLoading(false);
   };
