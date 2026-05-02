@@ -12,8 +12,8 @@ const BookCard = ({book}) => {
    <Image 
    src={book.image_url}
     alt={book.category} 
-    sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
- fill
+   
+height={300} width={400}
     className='object-cover rounded-xl'
     >
   

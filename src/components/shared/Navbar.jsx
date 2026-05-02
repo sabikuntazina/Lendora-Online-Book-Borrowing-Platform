@@ -45,7 +45,7 @@ await authClient.signOut();
             height={30}
             className="object-cover h-auto w-auto"
           />
-    <a className=" ml-2 font-extrabold text-xl">Lendora</a>
+    <Link href={'/'}><p className=" ml-2 font-extrabold text-xl">Lendora</p> </Link> 
   </div>
   <div className="navbar-center hidden lg:flex">
     <ul className="menu menu-horizontal space-x-4 px-1 text-lg">
