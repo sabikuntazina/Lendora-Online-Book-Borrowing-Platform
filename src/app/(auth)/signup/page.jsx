@@ -7,6 +7,7 @@ import { Icon } from "@iconify/react";
 import { useForm } from "react-hook-form";
 import { authClient } from "@/lib/auth-client";
 import { toast } from "react-toastify";
+import { redirect } from "next/navigation";
 
 const SignUpPage = () => {
   const {
@@ -29,7 +30,8 @@ const SignUpPage = () => {
 });
 console.log(res, error);
     if(res){
-  toast.success("sign up in successfully done")
+  toast.success("sign up in successfully done");
+  redirect('/signin')
 }
 if(error){
   toast.error(error.message)
