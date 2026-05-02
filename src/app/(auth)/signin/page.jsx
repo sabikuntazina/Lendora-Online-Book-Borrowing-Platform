@@ -6,6 +6,7 @@ import React from "react";
 import { Icon } from "@iconify/react";
 import { useForm } from "react-hook-form";
 import { authClient } from "@/lib/auth-client";
+import { toast } from "react-toastify";
 
 const SignInPage = () => {
   const {
@@ -27,10 +28,10 @@ const SignInPage = () => {
     callbackURL: "/",
 });
    if(res){
-  alert("Login is successful")
+  toast.success("Login is successful")
 }
 if(error){
-  alert(error.message)
+  toast.error(error.message)
 }
 
     setLoading(false);

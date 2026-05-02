@@ -25,7 +25,7 @@ const SignUpPage = () => {
     email: data.email, // required
     password: data.password, // required
     image: data.photo,
-    callbackURL: "/signin",
+    callbackURL: "/",
 });
 console.log(res, error);
     if(res){
