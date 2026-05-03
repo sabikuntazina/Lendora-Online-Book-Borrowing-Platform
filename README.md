@@ -1,36 +1,111 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# 📚 Lendora – Online Book Borrowing Platform
 
-## Getting Started
+## 🚀 Project Name
+Lendora
 
-First, run the development server:
+---
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+## 🎯 Project Purpose
+Lendora is a modern online book borrowing platform built with Next.js.  
+It allows users to browse books, view detailed information, and borrow books with a smooth and interactive UI experience.
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+The main goal of this project is to simulate a real-world library system with a clean UI and dynamic functionality.
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+---
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## 🌐 Live URL
+👉 https://your-live-link-here.com
 
-## Learn More
+---
 
-To learn more about Next.js, take a look at the following resources:
+## ✨ Key Features
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+- 📖 Browse a collection of books dynamically
+- 🔍 View detailed book information
+- 📦 Borrow book system with redirect flow
+- 🎉 Thank You page after successful borrowing
+- ⭐ Dynamic rating & review section
+- 📂 Category-based book structure
+- 💜 Modern purple-themed UI design
+- 📱 Fully responsive for all devices
+- 🔔 Toast notifications for user actions
+- 🎬 Smooth animations using Animate.css
+- ⚡ Fast performance with Next.js App Router
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+---
 
-## Deploy on Vercel
+## 🧰 Technologies Used
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+### Frontend
+- Next.js (App Router)
+- React.js
+- Tailwind CSS
+- React Icons
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+### UI & Animation
+- DaisyUI
+- Animate.css
+- Custom Tailwind Styling
+- Glassmorphism UI Effects
+
+### Notifications
+- react-toastify
+
+### Image Handling
+- Next.js Image Optimization
+
+---
+
+## 📦 NPM Packages Used
+next
+react
+react-dom
+tailwindcss
+daisyui
+react-icons
+react-toastify
+animate.css
+
+
+---
+
+## 📁 Project Pages
+
+- Home Page → Book listing with rating section  
+- Book Details Page → Full book information  
+- Borrow System → Borrow button with redirect  
+- Thank You Page → Animated success page  
+
+---
+
+## 🎬 Animation
+
+This project uses Animate.css for smooth UI experience:
+
+- Page load animations
+- Card fade-in effects
+- Button transitions
+- Icon animations
+
+---
+
+## 💡 Future Improvements
+
+- Authentication system (Login/Register)
+- MongoDB database integration
+- User dashboard (borrow history)
+- Real review system
+- Admin panel for book management
+
+---
+
+## 👨‍💻 Developer
+
+Sabikun Tazina  
+Frontend Developer | Next.js Enthusiast
+
+---
+
+## ⭐ Support
+
+If you like this project, please give it a ⭐ on GitHub.
