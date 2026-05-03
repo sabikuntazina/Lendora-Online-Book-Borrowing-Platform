@@ -1,12 +1,18 @@
+
+import BorrowButton from '@/components/BorrowButton';
 import { getAllBooks } from '@/lib/method';
 import Image from 'next/image';
+import Link from 'next/link';
 import React from 'react';
 import { FaBookOpen } from 'react-icons/fa';
+import { toast } from 'react-toastify';
 
 const BookDetailsPage =async ({params}) => {
   const {id} =await params;
  const allBooks= await getAllBooks();
   const bookDetails=allBooks.find(book=> book.id==id)
+
+  
 
   return (
    <div className="hero bg-base-200 min-h-screen my-10">
@@ -34,8 +40,10 @@ const BookDetailsPage =async ({params}) => {
       </p>
             <h3 className='md:text-lg text-gray-800 font-semibold'>Available Quantity:  {bookDetails.available_quantity}</h3>
             
-          
-      <button className='btn bg-linear-to-r from-purple-400 to-orange-500 font-bold md:text-xl text-white px-6 py-2 rounded-lg'><FaBookOpen /> Borrow This Book</button>
+        <Link href={'/thankyou'}> 
+        
+     <BorrowButton></BorrowButton>
+        </Link>  
     </div>
   </div>
 </div>

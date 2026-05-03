@@ -19,5 +19,5 @@ export default async function proxy(request) {
 // export default function proxy(request) { ... }
  
 export const config = {
-  matcher: ['/allbooks/:id'],
+  matcher: ['/allbooks/:id', '/myprofile','/thankyou'],
 }
