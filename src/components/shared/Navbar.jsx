@@ -57,7 +57,7 @@ await authClient.signOut();
     {
       user? (
          <div className='space-x-4 flex items-center'>
-          <h2>{user.name}</h2>
+          <h2 className='font-semibold hidden md:flex'>{user.name}</h2>
         <div tabIndex={0} role="button" className="btn btn-ghost btn-circle avatar">
         <div className="w-10 rounded-full">
         <Image src={user.image} alt='user-logo' height={40} width={40} ></Image>
