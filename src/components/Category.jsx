@@ -6,9 +6,9 @@ const Category =async () => {
   const categories= await res.json();
   // console.log(categories)
   return (
-    <div className='flex lg:flex-col gap-4'>
+    <div className='flex flex-wrap flex-row  md:flex-col gap-4'>
       {
-        categories.map(c=><Link key={c.id}  href={`?category=${c.name.toLowerCase()}`}><div className='flex py-3 px-10 md:text-2xl font-semibold rounded-lg  border-2 border-black hover:bg-gray-300 shadow'><p>{c.icon}{" "} </p> <p>{c.name}</p> </div></Link>)
+        categories.map(c=><Link key={c.id}  href={`?category=${c.name.toLowerCase()}`}><div className='flex py-3 px-5 md:px-10 md:text-2xl font-semibold rounded-lg border-2 border-black hover:bg-gray-300 shadow'><p>{c.icon}{" "} </p> <p>{c.name}</p> </div></Link>)
       }
     </div>
   );
