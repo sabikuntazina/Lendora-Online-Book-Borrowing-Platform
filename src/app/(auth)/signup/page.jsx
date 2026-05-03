@@ -64,7 +64,7 @@ if(error){
               <div className="input-group">
                 <input
                   type="text"
-                  placeholder="your@email.com"
+                  placeholder="your name"
                   className="input input-bordered w-full"
                   {...register("name", { required: "Please enter your name" })}
                 />
@@ -100,7 +100,7 @@ if(error){
               <div className="input-group">
                 <input
                   type="text"
-                  placeholder="your@email.com"
+                  placeholder="photo url"
                   className="input input-bordered w-full"
                   {...register("photo", { required: "Paste Photo URL" })}
                 />
