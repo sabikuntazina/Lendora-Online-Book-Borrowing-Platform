@@ -12,25 +12,24 @@ const reviewsText = [
   "You should definitely check this out!"
 ];
 
-// stable review
+
 const getReviewById = (id) => {
   return reviewsText[id % reviewsText.length];
 };
 
-// review count
+
 const getReviewCount = (rating) => {
   return Math.floor(rating * 40);
 };
 
 const BookRatingsSection = ({ books }) => {
 
-  // 🔥 SORT by rating (high → low)
   const topBooks = [...books]
     .sort((a, b) => b.rating - a.rating)
     .slice(0, 4);
 
   return (
-    <div className="py-16 bg-gradient-to-br from-purple-50 to-white">
+    <div className="py-16 bg-linear-to-br from-purple-50 to-white">
       <h2 className="text-3xl md:text-4xl font-bold text-center text-purple-700 mb-10">
         📢 Top Rated Books
       </h2>
@@ -45,7 +44,7 @@ const BookRatingsSection = ({ books }) => {
               key={book.id}
               className="bg-white rounded-2xl shadow-md hover:shadow-xl transition p-5 space-y-4"
             >
-              {/* Image */}
+             
               <Image
                 src={book.image_url}
                 alt={book.title}
@@ -54,12 +53,12 @@ const BookRatingsSection = ({ books }) => {
                 className="rounded-xl w-full h-48 object-cover"
               />
 
-              {/* Title */}
+           
               <h3 className="text-xl font-semibold text-gray-800">
                 {book.title}
               </h3>
 
-              {/* Rating */}
+       
               <div className="flex items-center gap-2 text-yellow-500">
                 <FaStar />
                 <span className="font-bold">{book.rating}</span>
@@ -68,12 +67,12 @@ const BookRatingsSection = ({ books }) => {
                 </span>
               </div>
 
-              {/* Review */}
+           
               <p className="text-gray-600 text-sm italic">
                 “{reviewText}”
               </p>
 
-              {/* CTA */}
+          
               <Link href={`/allbooks/${book.id}`}>
                 <button className="w-full mt-2 py-2 rounded-lg bg-purple-600 text-white hover:bg-purple-700 transition">
                   Borrow This Book 📖

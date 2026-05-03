@@ -18,7 +18,7 @@ const BorrowButton = () => {
   return (
     <button
       onClick={handleBorrow}
-      className="btn bg-gradient-to-r from-purple-400 to-orange-500 font-bold md:text-xl text-white px-6 py-2 rounded-lg"
+      className="btn bg-linear-to-br from-purple-400 to-orange-500 font-bold md:text-xl text-white px-6 py-2 rounded-lg"
     >
       <FaBookOpen /> Borrow This Book
     </button>
