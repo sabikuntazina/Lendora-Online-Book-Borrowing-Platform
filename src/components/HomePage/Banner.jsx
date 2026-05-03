@@ -8,16 +8,19 @@ const Banner = () => {
        <div className="absolute inset-0 bg-black/40"></div>
         <div className="relative z-10 text-white p-10 space-y-8 text-center">
     <h1 className="text-4xl lg:text-6xl font-bold">Find Your Next Read</h1>
-    <div className='space-x-4'>
+    <div className='space-x-4 space-y-4'>
 
 <Link href={'./allbooks'}>
-    <button className="md:text-xl outline-none bg-linear-to-r from-purple-500 to-orange-800 font-bold text-white px-6 py-2 rounded-lg">
+    <button className="md:text-xl outline-none bg-linear-to-r from-purple-500 to-orange-800 -mb-2 font-bold text-white px-6 py-2 rounded-lg hover:bg-purple-200 cursor-pointer">
  Browse Now
 </button>
 </Link>
-    <button className="md:text-xl btn-outline btn font-bold text-white px-6 py-2 rounded-lg">
+<Link href={'/signup'}>
+
+    <button className="md:text-xl btn-outline btn font-bold text-white px-6 py-2 mt-2 md:mt-0 rounded-lg">
  Membership
 </button>
+</Link>
     </div>
   </div>
     </div>

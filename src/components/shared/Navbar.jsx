@@ -22,7 +22,7 @@ await authClient.signOut();
   <NavLink href={'/myprofile'}><li>Profile</li></NavLink>
   </>
   return (
-    <div className='bg-base-100 shadow-sm'>
+    <div className='bg-base-100 shadow-sm sticky top-0 z-10'>
 
    <div className="navbar max-w-7xl mx-auto ">
     

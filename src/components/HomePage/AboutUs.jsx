@@ -26,7 +26,7 @@ const AboutUs = () => {
   }, []);
 
   return (
-    <section id="about" ref={sectionRef} className="py-20 bg-white dark:bg-slate-900">
+    <section id="about" ref={sectionRef} className="py-20 bg-white">
       <div className="">
 
         {/* Header */}

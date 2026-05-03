@@ -6,7 +6,8 @@ Lendora
 ---
 
 ## 🎯 Project Purpose
-Lendora is a modern & online book borrowing platform built with Next.js.
+Lendora is a modern & online book borrowing platform built with Next.js. It is a seamless and modern web application designed to digitize the traditional library experience. Users can explore a vast collection of books, filter by categories, and borrow titles digitally. The platform prioritizes security and performance using BetterAuth, Next.js, and MongoDB.
+
 
 The system allows users to:
 - Browse books
