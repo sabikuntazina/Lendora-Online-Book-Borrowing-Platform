@@ -7,7 +7,8 @@
     "category": "Story",
     "available_quantity": 8,
     "badge": "",
-    "image_url": "https://i.ibb.co.com/bgmYCHmr/book1.jpg"
+    "image_url": "https://i.ibb.co.com/bgmYCHmr/book1.jpg",
+    "rating": 4.3
   },
   {
     "id": 2,
@@ -17,7 +18,8 @@
     "category": "Tech",
     "available_quantity": 12,
     "badge": "Popular",
-    "image_url": "https://i.ibb.co.com/NgWNwJPM/book2.webp"
+    "image_url": "https://i.ibb.co.com/NgWNwJPM/book2.webp",
+    "rating": 4.8
   },
   {
     "id": 3,
@@ -27,7 +29,8 @@
     "category": "Science",
     "available_quantity": 5,
     "badge": "",
-    "image_url": "https://i.ibb.co.com/dFttzv1/book3.jpg"
+    "image_url": "https://i.ibb.co.com/dFttzv1/book3.jpg",
+    "rating": 4.5
   },
   {
     "id": 4,
@@ -37,7 +40,8 @@
     "category": "Story",
     "available_quantity": 7,
     "badge": "",
-    "image_url": "https://i.ibb.co.com/7dqxQ9s0/book7.jpg"
+    "image_url": "https://i.ibb.co.com/7dqxQ9s0/book7.jpg",
+    "rating": 4.2
   },
   {
     "id": 5,
@@ -47,7 +51,8 @@
     "category": "Tech",
     "available_quantity": 10,
     "badge": "Popular",
-    "image_url": "https://i.ibb.co.com/WLtnsnQ/book5.jpg"
+    "image_url": "https://i.ibb.co.com/WLtnsnQ/book5.jpg",
+    "rating": 4.7
   },
   {
     "id": 6,
@@ -57,7 +62,8 @@
     "category": "Science",
     "available_quantity": 6,
     "badge": "",
-    "image_url": "https://i.ibb.co.com/Q36z0JgF/book6.jpg"
+    "image_url": "https://i.ibb.co.com/Q36z0JgF/book6.jpg",
+    "rating": 4.4
   },
   {
     "id": 7,
@@ -67,7 +73,8 @@
     "category": "Story",
     "available_quantity": 9,
     "badge": "",
-    "image_url": "https://i.ibb.co.com/7dqxQ9s0/book7.jpg"
+    "image_url": "https://i.ibb.co.com/7dqxQ9s0/book7.jpg",
+    "rating": 4.1
   },
   {
     "id": 8,
@@ -77,7 +84,8 @@
     "category": "Tech",
     "available_quantity": 11,
     "badge": "Popular",
-    "image_url": "https://i.ibb.co.com/8nTq47YB/book8.jpg"
+    "image_url": "https://i.ibb.co.com/8nTq47YB/book8.jpg",
+    "rating": 4.9
   },
   {
     "id": 9,
@@ -87,7 +95,8 @@
     "category": "Science",
     "available_quantity": 4,
     "badge": "New",
-    "image_url": "https://i.ibb.co.com/Kp07Zx14/book9.jpg"
+    "image_url": "https://i.ibb.co.com/Kp07Zx14/book9.jpg",
+    "rating": 4.6
   },
   {
     "id": 10,
@@ -97,7 +106,8 @@
     "category": "Story",
     "available_quantity": 6,
     "badge": "New",
-    "image_url": "https://i.ibb.co.com/C3FBg9mW/book10.jpg"
+    "image_url": "https://i.ibb.co.com/C3FBg9mW/book10.jpg",
+    "rating": 4.3
   },
   {
     "id": 11,
@@ -107,7 +117,8 @@
     "category": "Tech",
     "available_quantity": 13,
     "badge": "Popular",
-    "image_url": "https://i.ibb.co.com/rK6WwXgc/book11.jpg"
+    "image_url": "https://i.ibb.co.com/rK6WwXgc/book11.jpg",
+    "rating": 4.8
   },
   {
     "id": 12,
@@ -117,6 +128,7 @@
     "category": "Science",
     "available_quantity": 5,
     "badge": "New",
-    "image_url": "https://i.ibb.co.com/20FrhNRh/book12.avif"
+    "image_url": "https://i.ibb.co.com/20FrhNRh/book12.avif",
+    "rating": 4.5
   }
 ]
