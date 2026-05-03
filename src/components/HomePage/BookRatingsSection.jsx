@@ -24,7 +24,7 @@ const getReviewCount = (rating) => {
 
 const BookRatingsSection = ({ books }) => {
   return (
-    <div className="py-16 bg-gradient-to-br from-purple-50 to-white">
+    <div className="py-16 bg-linear-to-br from-purple-50 to-white">
       <h2 className="text-3xl md:text-4xl font-bold text-center text-purple-700 mb-10">
         📢 What Readers Are Saying
       </h2>
