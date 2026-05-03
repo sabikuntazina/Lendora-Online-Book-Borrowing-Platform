@@ -7,6 +7,17 @@ import React from 'react';
 import { FaBookOpen } from 'react-icons/fa';
 import { toast } from 'react-toastify';
 
+export const generateMetadata = async ({ params }) => {
+  const { id } = await params;
+ const allBooks= await getAllBooks();
+  const bookDetails=allBooks.find(book=> book.id==id)
+
+  return {
+    title: bookDetails.title,
+    description: bookDetails.description,
+  };
+};
+
 const BookDetailsPage =async ({params}) => {
   const {id} =await params;
  const allBooks= await getAllBooks();
