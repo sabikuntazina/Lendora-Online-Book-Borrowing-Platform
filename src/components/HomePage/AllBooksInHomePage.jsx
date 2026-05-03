@@ -6,7 +6,6 @@ import { FaArrowRight } from 'react-icons/fa';
 
 const AllBooksInHomePage =async () => {
 const allBooks= await getAllBooks();
-console.log(allBooks)
 
   return (
     <div className='my-10 space-y-8'>

@@ -3,7 +3,6 @@ import AboutUs from "@/components/HomePage/AboutUs";
 import AllBooksInHomePage from "@/components/HomePage/AllBooksInHomePage";
 import Banner from "@/components/HomePage/Banner";
 import MarqueeScroller from "@/components/shared/MarqueeScroller";
-import Image from "next/image";
 
 export default function Home() {
  
