@@ -12,7 +12,7 @@ const BorrowButton = () => {
     
     setTimeout(() => {
       router.push("/thankyou");
-    }, 1500);
+    }, 1000);
   };
 
   return (
