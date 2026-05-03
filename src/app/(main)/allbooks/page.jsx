@@ -5,7 +5,7 @@ import { getAllBooks } from "@/lib/method";
 
 const AllBooksPage = async ({ searchParams }) => {
   const { category, search } = await searchParams;
-  // console.log(category)
+
   const allBooks = await getAllBooks();
 
   let filteredBooks =
