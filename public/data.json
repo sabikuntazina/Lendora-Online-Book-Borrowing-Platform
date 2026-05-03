@@ -1,134 +1,84 @@
-[
-  {
-    "id": 1,
-    "title": "The Silent Forest",
-    "author": "Anika Rahman",
-    "description": "A mysterious story about a forest where no sound exists and secrets unfold.",
-    "category": "Story",
-    "available_quantity": 8,
-    "badge": "",
-    "image_url": "https://i.ibb.co.com/bgmYCHmr/book1.jpg",
-    "rating": 4.3
-  },
-  {
-    "id": 2,
-    "title": "Mastering JavaScript",
-    "author": "John Carter",
-    "description": "A complete guide to modern JavaScript, from basics to advanced concepts.",
-    "category": "Tech",
-    "available_quantity": 12,
-    "badge": "Popular",
-    "image_url": "https://i.ibb.co.com/NgWNwJPM/book2.webp",
-    "rating": 4.8
-  },
-  {
-    "id": 3,
-    "title": "Space Beyond Earth",
-    "author": "Dr. Emily Stone",
-    "description": "Explore the wonders of the universe and the mysteries of space.",
-    "category": "Science",
-    "available_quantity": 5,
-    "badge": "",
-    "image_url": "https://i.ibb.co.com/dFttzv1/book3.jpg",
-    "rating": 4.5
-  },
-  {
-    "id": 4,
-    "title": "The Lost City",
-    "author": "Rahim Uddin",
-    "description": "An adventure story about discovering a forgotten civilization.",
-    "category": "Story",
-    "available_quantity": 7,
-    "badge": "",
-    "image_url": "https://i.ibb.co.com/7dqxQ9s0/book7.jpg",
-    "rating": 4.2
-  },
-  {
-    "id": 5,
-    "title": "React for Beginners",
-    "author": "Sophia Lee",
-    "description": "Learn React step by step and build modern web applications.",
-    "category": "Tech",
-    "available_quantity": 10,
-    "badge": "Popular",
-    "image_url": "https://i.ibb.co.com/WLtnsnQ/book5.jpg",
-    "rating": 4.7
-  },
-  {
-    "id": 6,
-    "title": "The Human Brain",
-    "author": "Dr. Ahmed Khan",
-    "description": "A deep dive into how the human brain works and processes information.",
-    "category": "Science",
-    "available_quantity": 6,
-    "badge": "",
-    "image_url": "https://i.ibb.co.com/Q36z0JgF/book6.jpg",
-    "rating": 4.4
-  },
-  {
-    "id": 7,
-    "title": "Whispers of the Night",
-    "author": "Nusrat Jahan",
-    "description": "A romantic story filled with emotions, love, and heartbreak.",
-    "category": "Story",
-    "available_quantity": 9,
-    "badge": "",
-    "image_url": "https://i.ibb.co.com/7dqxQ9s0/book7.jpg",
-    "rating": 4.1
-  },
-  {
-    "id": 8,
-    "title": "Next.js in Action",
-    "author": "David Miller",
-    "description": "Build fast and scalable web apps using Next.js framework.",
-    "category": "Tech",
-    "available_quantity": 11,
-    "badge": "Popular",
-    "image_url": "https://i.ibb.co.com/8nTq47YB/book8.jpg",
-    "rating": 4.9
-  },
-  {
-    "id": 9,
-    "title": "Quantum World",
-    "author": "Dr. Sarah Wilson",
-    "description": "Understand the strange and fascinating world of quantum physics.",
-    "category": "Science",
-    "available_quantity": 4,
-    "badge": "New",
-    "image_url": "https://i.ibb.co.com/Kp07Zx14/book9.jpg",
-    "rating": 4.6
-  },
-  {
-    "id": 10,
-    "title": "The Hidden Truth",
-    "author": "Imran Hossain",
-    "description": "A thrilling story uncovering secrets buried deep in society.",
-    "category": "Story",
-    "available_quantity": 6,
-    "badge": "New",
-    "image_url": "https://i.ibb.co.com/C3FBg9mW/book10.jpg",
-    "rating": 4.3
-  },
-  {
-    "id": 11,
-    "title": "Full Stack Development",
-    "author": "Michael Brown",
-    "description": "Learn frontend and backend development to become a full stack developer.",
-    "category": "Tech",
-    "available_quantity": 13,
-    "badge": "Popular",
-    "image_url": "https://i.ibb.co.com/rK6WwXgc/book11.jpg",
-    "rating": 4.8
-  },
-  {
-    "id": 12,
-    "title": "Climate Change Explained",
-    "author": "Dr. Lisa Green",
-    "description": "A scientific explanation of climate change and its global impact.",
-    "category": "Science",
-    "available_quantity": 5,
-    "badge": "New",
-    "image_url": "https://i.ibb.co.com/20FrhNRh/book12.avif",
-    "rating": 4.5
-  }
-]
+"use client";
+
+import Image from "next/image";
+import Link from "next/link";
+import { FaStar } from "react-icons/fa";
+
+const reviewsText = [
+  "Amazing book! Highly recommended 📚",
+  "Really enjoyed reading this!",
+  "One of the best books I've read recently.",
+  "Super helpful and engaging!",
+  "You should definitely check this out!"
+];
+
+// id অনুযায়ী stable review
+const getReviewById = (id) => {
+  return reviewsText[id % reviewsText.length];
+};
+
+// rating অনুযায়ী review count (fake but stable)
+const getReviewCount = (rating) => {
+  return Math.floor(rating * 40); // e.g. 4.8 → 192 reviews
+};
+
+const BookRatingsSection = ({ books }) => {
+  return (
+    <div className="py-16 bg-linear-to-br from-purple-50 to-white">
+      <h2 className="text-3xl md:text-4xl font-bold text-center text-purple-700 mb-10">
+        📢 What Readers Are Saying
+      </h2>
+
+      <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 px-6">
+        {books.slice(0, 6).map((book) => {
+          const reviewText = getReviewById(book.id);
+          const reviewCount = getReviewCount(book.rating);
+
+          return (
+            <div
+              key={book.id}
+              className="bg-white rounded-2xl shadow-md hover:shadow-xl transition p-5 space-y-4"
+            >
+              {/* Image */}
+              <Image
+                src={book.image_url}
+                alt={book.title}
+                width={300}
+                height={200}
+                className="rounded-xl w-full h-48 object-cover"
+              />
+
+              {/* Title */}
+              <h3 className="text-xl font-semibold text-gray-800">
+                {book.title}
+              </h3>
+
+              {/* Rating */}
+              <div className="flex items-center gap-2 text-yellow-500">
+                <FaStar />
+                <span className="font-bold">{book.rating}</span>
+                <span className="text-gray-500 text-sm">
+                  ({reviewCount} reviews)
+                </span>
+              </div>
+
+              {/* Review */}
+              <p className="text-gray-600 text-sm italic">
+                “{reviewText}”
+              </p>
+
+              {/* CTA */}
+              <Link href={`/allbooks/${book.id}`}>
+                <button className="w-full mt-2 py-2 rounded-lg bg-purple-600 text-white hover:bg-purple-700 transition">
+                  Borrow This Book 📖
+                </button>
+              </Link>
+            </div>
+          );
+        })}
+      </div>
+    </div>
+  );
+};
+
+export default BookRatingsSection;

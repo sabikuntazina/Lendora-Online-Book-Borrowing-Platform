@@ -12,25 +12,31 @@ const reviewsText = [
   "You should definitely check this out!"
 ];
 
-// id অনুযায়ী stable review
+// stable review
 const getReviewById = (id) => {
   return reviewsText[id % reviewsText.length];
 };
 
-// rating অনুযায়ী review count (fake but stable)
+// review count
 const getReviewCount = (rating) => {
-  return Math.floor(rating * 40); // e.g. 4.8 → 192 reviews
+  return Math.floor(rating * 40);
 };
 
 const BookRatingsSection = ({ books }) => {
+
+  // 🔥 SORT by rating (high → low)
+  const topBooks = [...books]
+    .sort((a, b) => b.rating - a.rating)
+    .slice(0, 4);
+
   return (
-    <div className="py-16 bg-linear-to-br from-purple-50 to-white">
+    <div className="py-16 bg-gradient-to-br from-purple-50 to-white">
       <h2 className="text-3xl md:text-4xl font-bold text-center text-purple-700 mb-10">
-        📢 What Readers Are Saying
+        📢 Top Rated Books
       </h2>
 
-      <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 px-6">
-        {books.slice(0, 6).map((book) => {
+      <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8 px-6">
+        {topBooks.map((book) => {
           const reviewText = getReviewById(book.id);
           const reviewCount = getReviewCount(book.rating);
 
