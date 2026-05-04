@@ -23,17 +23,17 @@ const UpdateProfileModal = () => {
     <div>
       {/* Open the modal using document.getElementById('ID').showModal() method */}
       <button
-        className="btn"
+        className="btn btn-primary"
         onClick={() => document.getElementById("my_modal_5").showModal()}
       >
-        open modal
+        Update Profile
       </button>
      <dialog id="my_modal_5" className="modal">
   <div className="modal-box">
 
     <h1 className="text-xl font-bold">Update Profile</h1>
 
-    <form onSubmit={handleSubmit(handleSubmitFunc)} className="w-full space-y-3">
+    <form onSubmit={handleSubmit(handleSubmitFunc)} className="w-full text-left space-y-3">
 
       <div>
         <label className="label">Name</label>
