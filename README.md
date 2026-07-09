@@ -20,7 +20,7 @@ The main goal of this project is to simulate a real-world library system with au
 
 ---
 
-<img width="686" height="422" alt="Screenshot 2026-07-03 123212" src="https://github.com/sabikuntazina/Lendora-Online-Book-Borrowing-Platform/blob/main/public/assets/screenshort.png?raw=true" />
+<img src="public/assets/screenshort.png" alt="LifeAtlas Screenshot" width="900">
 
 ## 🌐 Live URL
 👉 https://lendora-online-book-borrowing-platf.vercel.app
